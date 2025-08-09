@@ -83,6 +83,11 @@ var layer_OpenStreetMap_1 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/
 });
 layer_OpenStreetMap_1;
 map.addLayer(layer_OpenStreetMap_1);
+
+
+//////////////////////// Inicia ANPP ////////////////////////////
+
+
 function pop_ANPParqueLinealQuetzalapanSedeoANPParque_LinealQuetzalapanSedeo_2(feature, layer) {
     layer.on({
         mouseout: function(e) {
@@ -248,7 +253,7 @@ function pop_CofrePerote1937_4(feature, layer) {
             <tr>\
                 <td colspan="2">' + (feature.properties['SUPERFICIE'] !== null ? autolinker.link(feature.properties['SUPERFICIE'].toLocaleString()) : '') + '</td>\
             </tr>\
-        </table>';
+    </table>';
     layer.bindPopup(popupContent, {maxHeight: 400});
     var popup = layer.getPopup();
     var content = popup.getContent();
@@ -264,7 +269,7 @@ function style_CofrePerote1937_4_0() {
         dashArray: '',
         lineCap: 'butt',
         lineJoin: 'miter',
-        weight: 1.0, 
+        weight: 1.0,
         fill: true,
         fillOpacity: 1,
         fillColor: 'rgba(85,121,22,0.524)',
@@ -417,6 +422,11 @@ var layer_IniciativaAguapasapormiCasa_6 = new L.geoJson(json_IniciativaAguapasap
 });
 bounds_group.addLayer(layer_IniciativaAguapasapormiCasa_6);
 map.addLayer(layer_IniciativaAguapasapormiCasa_6);
+
+
+///////////////////// Inicia Capa BLITZ ///////////////////////////
+
+
 function pop_BlitzNaolinco20072021_7(feature, layer) {
     layer.on({
         mouseout: function(e) {
@@ -489,6 +499,10 @@ var layer_BlitzNaolinco20072021_7 = new L.geoJson(json_BlitzNaolinco20072021_7, 
 });
 bounds_group.addLayer(layer_BlitzNaolinco20072021_7);
 map.addLayer(layer_BlitzNaolinco20072021_7);
+
+
+// subcapa Blitz Muestreo 2018-1
+
 function pop_Blitz20182_8(feature, layer) {
     layer.on({
         mouseout: function(e) {
@@ -508,14 +522,23 @@ function pop_Blitz20182_8(feature, layer) {
         mouseover: highlightFeature,
     });
     var popupContent = '<table>\
-             <tr>\
-                <td colspan="2">' + (feature.properties['R__o'] !== null ? autolinker.link(feature.properties['R__o'].toLocaleString()) : '') + '</td>\
+            <tr>\
+                <td colspan="2">' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
+            </tr>\
+            <tr>\
+                <td colspan="2">' + (feature.properties['descriptio'] !== null ? autolinker.link(feature.properties['descriptio'].toLocaleString()) : '') + '</td>\
+            </tr>\
+            <tr>\
+                <td colspan="2">' + (feature.properties['REPRESENTA'] !== null ? autolinker.link(feature.properties['REPRESENTA'].toLocaleString()) : '') + '</td>\
             </tr>\
             <tr>\
                 <td colspan="2">' + (feature.properties['PROMEDIO'] !== null ? autolinker.link(feature.properties['PROMEDIO'].toLocaleString()) : '') + '</td>\
             </tr>\
             <tr>\
                 <td colspan="2">' + (feature.properties['CATEGORIA'] !== null ? autolinker.link(feature.properties['CATEGORIA'].toLocaleString()) : '') + '</td>\
+            </tr>\
+            <tr>\
+                <td colspan="2">' + (feature.properties['gx_media_l'] !== null ? autolinker.link(feature.properties['gx_media_l'].toLocaleString()) : '') + '</td>\
             </tr>\
         </table>';
     layer.bindPopup(popupContent, {maxHeight: 400});
@@ -561,6 +584,9 @@ var layer_Blitz20182_8 = new L.geoJson(json_Blitz20182_8, {
 });
 bounds_group.addLayer(layer_Blitz20182_8);
 map.addLayer(layer_Blitz20182_8);
+
+// subcapa Blitz Muestreo 2018
+
 function pop_BlitzMuestreo2018_9(feature, layer) {
     layer.on({
         mouseout: function(e) {
@@ -581,7 +607,7 @@ function pop_BlitzMuestreo2018_9(feature, layer) {
     });
     var popupContent = '<table>\
             <tr>\
-                <td colspan="2">' + (feature.properties['R__o'] !== null ? autolinker.link(feature.properties['R__o'].toLocaleString()) : '') + '</td>\
+                <td colspan="2">' + (feature.properties['R___o'] !== null ? autolinker.link(feature.properties['R___o'].toLocaleString()) : '') + '</td>\
             </tr>\
             <tr>\
                 <td colspan="2">' + (feature.properties['PROMEDIO'] !== null ? autolinker.link(feature.properties['PROMEDIO'].toLocaleString()) : '') + '</td>\
@@ -633,6 +659,9 @@ var layer_BlitzMuestreo2018_9 = new L.geoJson(json_BlitzMuestreo2018_9, {
 });
 bounds_group.addLayer(layer_BlitzMuestreo2018_9);
 map.addLayer(layer_BlitzMuestreo2018_9);
+
+// subcapa Blitz Muestreo 2010
+
 function pop_BlitzMuestreo2010_10(feature, layer) {
     layer.on({
         mouseout: function(e) {
@@ -652,14 +681,23 @@ function pop_BlitzMuestreo2010_10(feature, layer) {
         mouseover: highlightFeature,
     });
     var popupContent = '<table>\
-             <tr>\
-                <td colspan="2">' + (feature.properties['R__o'] !== null ? autolinker.link(feature.properties['R__o'].toLocaleString()) : '') + '</td>\
+            <tr>\
+                <td colspan="2">' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
+            </tr>\
+            <tr>\
+                <td colspan="2">' + (feature.properties['descriptio'] !== null ? autolinker.link(feature.properties['descriptio'].toLocaleString()) : '') + '</td>\
+            </tr>\
+            <tr>\
+                <td colspan="2">' + (feature.properties['REPRESENTA'] !== null ? autolinker.link(feature.properties['REPRESENTA'].toLocaleString()) : '') + '</td>\
             </tr>\
             <tr>\
                 <td colspan="2">' + (feature.properties['PROMEDIO'] !== null ? autolinker.link(feature.properties['PROMEDIO'].toLocaleString()) : '') + '</td>\
             </tr>\
             <tr>\
                 <td colspan="2">' + (feature.properties['CATEGORIA'] !== null ? autolinker.link(feature.properties['CATEGORIA'].toLocaleString()) : '') + '</td>\
+            </tr>\
+            <tr>\
+                <td colspan="2">' + (feature.properties['gx_media_l'] !== null ? autolinker.link(feature.properties['gx_media_l'].toLocaleString()) : '') + '</td>\
             </tr>\
         </table>';
     layer.bindPopup(popupContent, {maxHeight: 400});
@@ -705,6 +743,10 @@ var layer_BlitzMuestreo2010_10 = new L.geoJson(json_BlitzMuestreo2010_10, {
 });
 bounds_group.addLayer(layer_BlitzMuestreo2010_10);
 map.addLayer(layer_BlitzMuestreo2010_10);
+
+///////////////////// Comienza CAPA REPDA 2021 /////////////////////////// 
+
+
 function pop_REPDA20213Concesiones12mpiosregionxalapa_11(feature, layer) {
     layer.on({
         mouseout: function(e) {
@@ -880,6 +922,10 @@ function pop_mpioszonacentralver_12(feature, layer) {
     popup.setContent(updatedContent);
 }
 
+
+//////////////////// Inicia Capa MUNICIPIOS /////////////////////////////////
+
+
 function style_mpioszonacentralver_12_0() {
     return {
         pane: 'pane_mpioszonacentralver_12',
@@ -1045,22 +1091,22 @@ map.on("zoomend", function(e) {
     title.addTo(map);
 var baseMaps = {};
 var overlaysTree = [
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/Hidrologacentrover_14.png" /> Hidrología centro Veracruz', layer: layer_Hidrologacentrover_14},
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/CuencascentroVeracruzcuencascentrovershp_13.png" /> Cuencas centro Veracruz', layer: layer_CuencascentroVeracruzcuencascentrovershp_13},
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/mpioszonacentralver_12.png" /> Municipios zona central Veracruz', layer: layer_mpioszonacentralver_12},
-    {label: 'REPDA 2021 Concesiones región Xalapa<br /><table><tr><td style="text-align: center;"><img src="/web/themes/custom/asamblea/mapa_guardianxs/legend/REPDA20213Concesiones12mpiosregionxalapa_11_DESCARGA1.png" /></td><td>DESCARGA</td></tr><tr><td style="text-align: center;"><img src="/web/themes/custom/asamblea/mapa_guardianxs/legend/REPDA20213Concesiones12mpiosregionxalapa_11_SUBTERRANEO2.png" /></td><td>SUBTERRANEO</td></tr><tr><td style="text-align: center;"><img src="/web/themes/custom/asamblea/mapa_guardianxs/legend/REPDA20213Concesiones12mpiosregionxalapa_11_SUPERFICIAL3.png" /></td><td>SUPERFICIAL</td></tr><tr><td style="text-align: center;"><img src="/web/themes/custom/asamblea/mapa_guardianxs/legend/REPDA20213Concesiones12mpiosregionxalapa_11_ZONAFEDERAL4.png" /></td><td>ZONA FEDERAL</td></tr></table>', layer: layer_REPDA20213Concesiones12mpiosregionxalapa_11},
+    {label: '<img src="w/themes/custom/asamblea/mapa_guardianxs/legend/Hidrologacentrover_14.png" width="5px" height=auto /> Hidrología centro Veracruz', layer: layer_Hidrologacentrover_14},
+    {label: '<img src="w/themes/custom/asamblea/mapa_guardianxs/legend/CuencascentroVeracruzcuencascentrovershp_13.png" width="5px" height=auto /> Cuencas centro Veracruz', layer: layer_CuencascentroVeracruzcuencascentrovershp_13},
+    {label: '<img src="w/themes/custom/asamblea/mapa_guardianxs/legend/mpioszonacentralver_12.png"width="5px" height=auto /> Municipios zona central Veracruz', layer: layer_mpioszonacentralver_12},
+    {label: 'REPDA 2021 Concesiones región Xalapa<br /><table><tr><td style="text-align: center;"><img src="w/themes/custom/asamblea/mapa_guardianxs/legend/REPDA20213Concesiones12mpiosregionxalapa_11_DESCARGA1.png" width="5px" height=auto /></td><td>DESCARGA</td></tr><tr><td style="text-align: center;"><img src="w/themes/custom/asamblea/mapa_guardianxs/legend/REPDA20213Concesiones12mpiosregionxalapa_11_SUBTERRANEO2.png" width="5px" height=auto/></td><td>SUBTERRANEO</td></tr><tr><td style="text-align: center;"><img src="/web/themes/custom/asamblea/mapa_guardianxs/legend/REPDA20213Concesiones12mpiosregionxalapa_11_SUPERFICIAL3.png" /></td><td>SUPERFICIAL</td></tr><tr><td style="text-align: center;"><img src="/web/themes/custom/asamblea/mapa_guardianxs/legend/REPDA20213Concesiones12mpiosregionxalapa_11_ZONAFEDERAL4.png" /></td><td>ZONA FEDERAL</td></tr></table>', layer: layer_REPDA20213Concesiones12mpiosregionxalapa_11},
 {label: '<b>Monitoreo calidad del agua -GWW</b>', selectAllCheckbox: true, children: [
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/BlitzMuestreo2010_10.png" /> Blitz Muestreo 2010', layer: layer_BlitzMuestreo2010_10},
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/BlitzMuestreo2018_9.png" /> Blitz Muestreo 2018', layer: layer_BlitzMuestreo2018_9},
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/Blitz20182_8.png" /> Blitz 2018-2', layer: layer_Blitz20182_8},
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/BlitzNaolinco20072021_7.png" /> Blitz Naolinco 2007-2021', layer: layer_BlitzNaolinco20072021_7},]},
+    {label: '<img src="w/themes/custom/asamblea/mapa_guardianxs/legend/BlitzMuestreo2010_10.png" width="5px" height=auto /> Blitz Muestreo 2010', layer: layer_BlitzMuestreo2010_10},
+    {label: '<img src="w/themes/custom/asamblea/mapa_guardianxs/legend/BlitzMuestreo2018_9.png" width="5px" height=auto /> Blitz Muestreo 2018', layer: layer_BlitzMuestreo2018_9},
+    {label: '<img src="w/themes/custom/asamblea/mapa_guardianxs/legend/Blitz20182_8.png" width="5px" height=auto /> Blitz 2018-2', layer: layer_Blitz20182_8},
+    {label: '<img src="w/themes/custom/asamblea/mapa_guardianxs/legend/BlitzNaolinco20072021_7.png" width="5px" height=auto /> Blitz Naolinco 2007-2021', layer: layer_BlitzNaolinco20072021_7},]},
 {label: '<b>Acciones por el agua</b>', selectAllCheckbox: true, children: [
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/IniciativaAguapasapormiCasa_6.png" /> Iniciativa Agua pasa por mi Casa', layer: layer_IniciativaAguapasapormiCasa_6},
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/RecorridosManantialesenlaarena_5.png" /> Recorridos Manantiales en la arena', layer: layer_RecorridosManantialesenlaarena_5},]},
+    {label: '<img src="web/themes/custom/asamblea/mapa_guardianxs/legend/IniciativaAguapasapormiCasa_6.png" width="5px" height=auto /> Iniciativa Agua pasa por mi Casa', layer: layer_IniciativaAguapasapormiCasa_6},
+    {label: '<img src="web/themes/custom/asamblea/mapa_guardianxs/legend/RecorridosManantialesenlaarena_5.png" width="5px" height=auto /> Recorridos Manantiales en la arena', layer: layer_RecorridosManantialesenlaarena_5},]},
 {label: '<b>ANPs</b>', selectAllCheckbox: true, children: [
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/CofrePerote1937_4.png" /> Cofre de Perote 1937', layer: layer_CofrePerote1937_4},
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/AchipilagodeBosquesySelvasdelaReginCapitalANPArchipelagodeBosquesySelvasdelaReginCapital_3.png" /> ANP Arch. de Bosques y Selvas Región Capital', layer: layer_AchipilagodeBosquesySelvasdelaReginCapitalANPArchipelagodeBosquesySelvasdelaReginCapital_3},
-    {label: '<img src="themes/custom/asamblea/mapa_guardianxs/legend/ANPParqueLinealQuetzalapanSedeoANPParque_LinealQuetzalapanSedeo_2.png" /> ANP Parque Lineal Quetzalapan-Sedeño', layer: layer_ANPParqueLinealQuetzalapanSedeoANPParque_LinealQuetzalapanSedeo_2},]},
+    {label: '<img src="web/themes/custom/asamblea/mapa_guardianxs/legend/CofrePerote1937_4.png" width="5px" height=auto /> Cofre de Perote 1937', layer: layer_CofrePerote1937_4},
+    {label: '<img src="web/themes/custom/asamblea/mapa_guardianxs/legend/AchipilagodeBosquesySelvasdelaReginCapitalANPArchipelagodeBosquesySelvasdelaReginCapital_3.png" width="5px" height=auto /> ANP Arch. de Bosques y Selvas Región Capital', layer: layer_AchipilagodeBosquesySelvasdelaReginCapitalANPArchipelagodeBosquesySelvasdelaReginCapital_3},
+    {label: '<img src="web/themes/custom/asamblea/mapa_guardianxs/legend/ANPParqueLinealQuetzalapanSedeoANPParque_LinealQuetzalapanSedeo_2.png" width="5px" height=auto/> ANP Parque Lineal Quetzalapan-Sedeño', layer: layer_ANPParqueLinealQuetzalapanSedeoANPParque_LinealQuetzalapanSedeo_2},]},
     {label: "OpenStreetMap", layer: layer_OpenStreetMap_1},
     {label: "ESRI Satellite", layer: layer_ESRISatellite_0},]
 var lay = L.control.layers.tree(null, overlaysTree,{
