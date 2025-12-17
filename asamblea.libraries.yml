@@ -1,0 +1,97 @@
+global-styling:
+  version: VERSION
+  js: 
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {}
+    js/global.js: {}
+     #js/leaflet.js: {}
+     #js/leaflet.js.map: {}
+    # js/script.js: {}
+
+  css:
+    component:
+      css/style.css: {}
+      css/mod.css: {}
+      css/leaflet.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+custom_node:
+  css:
+    theme:
+      css_mapa/leaflet.css: {}
+  js:
+    js_mapa/leaflet.js: {}
+    js_mapa/script2.js: {}
+
+custom_mapa:
+  css:
+    theme:
+      css_mapa/leaflet.css: {}
+
+  js:
+    js_mapa/leaflet.js: {}
+    js_mapa/script.js: {}
+
+custom_qgis:
+  css:
+    mapa_guardianxs/css_mapa/leaflet.css: {}
+    mapa_guardianxs/css_mapa/MarkerCluster.Default.css: {}
+    mapa_guardianxs/css_mapa/MarkerCluster.css: {}
+    mapa_guardianxs/css_mapa/fontawesome-all.min.css: {}
+    mapa_guardianxs/css_mapa/leaflet-measure.css: {}
+    mapa_guardianxs/css_mapa/qgis2web.css: {}
+    mapa_guardianxs/css_mapa/L.Control.Layers.Tree.css: {}
+      
+  js:
+    mapa_guardianxs/js_mapa/Leaflet.VectorGrid.js: {}
+    mapa_guardianxs/js_mapa/leaflet-hash.js: {}
+    mapa_guardianxs/js_mapa/leaflet-measure.js: {}
+    mapa_guardianxs/js_mapa/leaflet.markercluster.js: {}
+    mapa_guardianxs/js_mapa/leaflet.rotatedMarker.js: {}
+    mapa_guardianxs/js_mapa/Autolinker.min.js: {}
+    mapa_guardianxs/js_mapa/L.Control.Layers.Tree.min.js: {}
+    mapa_guardianxs/js_mapa/OSMBuildings-Leaflet.js: {}
+    mapa_guardianxs/js_mapa/labelgun.min.js: {}
+    mapa_guardianxs/js_mapa/labels.js: {}
+    mapa_guardianxs/js_mapa/leaflet-heat.js: {}
+    mapa_guardianxs/js_mapa/leaflet-svg-shape-markers.min.js: {}
+    mapa_guardianxs/js_mapa/leaflet-tilelayer-wmts.js: {}
+    mapa_guardianxs/js_mapa/leaflet.js: {}
+    mapa_guardianxs/js_mapa/leaflet.js.map: {}
+    mapa_guardianxs/js_mapa/leaflet.pattern.js: {}
+    mapa_guardianxs/js_mapa/leaflet.wms.js: {}
+    mapa_guardianxs/js_mapa/multi-style-layer.js: {}
+    mapa_guardianxs/js_mapa/qgis2web_expressions.js: {}
+    mapa_guardianxs/js_mapa/rbush.min.js: {}
+    mapa_guardianxs/data/ANPParqueLinealQuetzalapanSedeoANPParque_LinealQuetzalapanSedeo_2.js: {}
+    mapa_guardianxs/data/AchipilagodeBosquesySelvasdelaReginCapitalANPArchipelagodeBosquesySelvasdelaReginCapital_3.js: {}
+    mapa_guardianxs/data/Blitz20182_8.js: {}
+    mapa_guardianxs/data/BlitzMuestreo2010_10.js: {}
+    mapa_guardianxs/data/BlitzMuestreo2018_9.js: {}
+    mapa_guardianxs/data/BlitzNaolinco20072021_7.js: {}
+    mapa_guardianxs/data/CofrePerote1937_4.js: {}
+    mapa_guardianxs/data/CuencascentroVeracruzcuencascentrovershp_13.js: {}
+    mapa_guardianxs/data/Hidrologacentrover_14.js: {}
+    mapa_guardianxs/data/IniciativaAguapasapormiCasa_6.js: {}
+    mapa_guardianxs/data/REPDA20213Concesiones12mpiosregionxalapa_11.js: {}
+    mapa_guardianxs/data/RecorridosManantialesenlaarena_5.js: {}
+    mapa_guardianxs/data/mpioszonacentralver_12.js: {}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
